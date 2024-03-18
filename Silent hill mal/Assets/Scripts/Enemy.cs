@@ -17,7 +17,13 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (isPlayerinRange == true)
+            {
+                transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
+                //transform.position = Vector3(transform.position, new Vector3(player.position.x, player.position.y, player.position.z), speed * Time.deltaTime);
+
+                animator.SetBool("isPlayerInRange", isPlayerinRange);
+            }
     }
     
 
@@ -27,13 +33,7 @@ public class Enemy : MonoBehaviour
          if(collision.gameObject.CompareTag ("Player"))
         {
             isPlayerinRange = true;
-            if (isPlayerinRange == true)
-            {
-                transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
-                //transform.position = Vector3(transform.position, new Vector3(player.position.x, player.position.y, player.position.z), speed * Time.deltaTime);
-
-                animator.SetBool("isPlayerInRange", isPlayerinRange);
-            }
+           
         }
     }
 
