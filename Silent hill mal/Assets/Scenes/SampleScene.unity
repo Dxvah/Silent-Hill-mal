@@ -851,10 +851,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 21.900692
+  m_Radius: 29.661829
   m_Height: 70.84987
   m_Direction: 1
-  m_Center: {x: -18.90131, y: 0, z: 5.5479965}
+  m_Center: {x: -12.338789, y: 0, z: 4.349367}
 --- !u!1 &848746130 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 1424bb50b9af03442938dd1ab39b9367, type: 3}
